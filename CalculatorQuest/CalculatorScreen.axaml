@@ -1,0 +1,58 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="CalculatorQuest.CalculatorScreen"
+        Title="Calculatrice de mort">
+        <Window.Background>
+                <ImageBrush Source="C:\Users\lukas\RiderProjects\CalculatorQuest\CalculatorQuest\Assets\Trollface.png"/>
+        </Window.Background>
+        <Grid Column="1" Row="1">
+                <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                
+                <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                
+                <Label Grid.Row="0" Grid.Column="0" Name="Operation" Content=""/>
+                <Label Grid.Row="1"  Grid.ColumnSpan="2" Name="Result" Content="0"/>
+                <Button Grid.Row="2" Grid.Column="0" Click="C" Content="C"/>
+                <Button Grid.Row="2" Grid.Column="1" Click="Ce" Content="CE"/>
+                <Button Grid.Row="2" Grid.Column="2" Click="Del" Content="Del"/>
+                <Button Grid.Row="3" Grid.Column="0" Click="displayValue" Content="%"/>
+                <Button Grid.Row="3" Grid.Column="1" Click="displayValue" Content="/"/>
+                <Button Grid.Row="3" Grid.Column="2" Click="displayValue" Content="x"/>
+                <Button Grid.Row="4" Grid.Column="0" Click="Sign" Content="+/-"/>
+                <Button Grid.Row="4" Grid.Column="1" Click="displayValue" Content="+"/>
+                <Button Grid.Row="4" Grid.Column="2" Click="displayValue" Content="-"/>
+                <Button Grid.Row="5" Grid.Column="0" Click="displayValue" Content="1"/>
+                <Button Grid.Row="5" Grid.Column="1" Click="displayValue" Content="2"/>
+                <Button Grid.Row="5" Grid.Column="2" Click="displayValue" Content="3"/>
+                <Button Grid.Row="6" Grid.Column="0" Click="displayValue" Content="4"/>
+                <Button Grid.Row="6" Grid.Column="1" Click="displayValue" Content="5"/>
+                <Button Grid.Row="6" Grid.Column="2" Click="displayValue" Content="6"/>
+                <Button Grid.Row="7" Grid.Column="0" Click="displayValue" Content="7"/>
+                <Button Grid.Row="7" Grid.Column="1" Click="displayValue" Content="8"/>
+                <Button Grid.Row="7" Grid.Column="2" Click="displayValue" Content="9"/>
+                <Button Grid.Row="8" Grid.Column="0" Click="displayValue" Content=","/>
+                <Button Grid.Row="8" Grid.Column="1" Click="displayValue" Content="0"/>
+                <Button Grid.Row="8" Grid.Column="2" Click="Equal" Content="="/>
+                <Button Grid.Row="9" Grid.Column="0" Click="Square" Content="square"/>
+                <Button Grid.Row="9" Grid.Column="1" Click="Sqrt" Content="Sqrt"/>
+                <Button Grid.Row="9" Grid.Column="2" Click="Invert" Content="1/x"/>
+        </Grid>
+</Window>
